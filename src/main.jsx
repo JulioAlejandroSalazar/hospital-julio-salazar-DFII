@@ -12,12 +12,20 @@ async function enableMocking() {
         url: "/mockServiceWorker.js",
       },
     });
+  } else {
+    const { worker } = await import("./mocks/browser");
+    await worker.start({
+      serviceWorker: {
+        url: "/hospital-julio-salazar-DFII/mockServiceWorker.js",
+      },
+      onUnhandledRequest: "bypass",
+    });
   }
 }
 
 enableMocking().then(() => {
   createRoot(document.getElementById("root")).render(
-    <BrowserRouter>
+    <BrowserRouter basename="/hospital-julio-salazar-DFII">
       <App />
     </BrowserRouter>
   );

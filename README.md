@@ -1,16 +1,38 @@
-# React + Vite
+# 🏥 Hospital App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Descripción
+**Hospital App** es una aplicación web desarrollada en **React** que simula la gestión básica de pacientes en un entorno hospitalario.  
+Permite visualizar una lista de pacientes obtenida desde un **servidor simulado** mediante **Mock Service Worker (MSW)**, lo que facilita el desarrollo y las pruebas sin depender de un backend real.  
 
-Currently, two official plugins are available:
+El proyecto fue implementado utilizando **Vite**, y se encuentra desplegado en **GitHub Pages**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Características principales
+- Visualización de pacientes en una interfaz limpia y moderna.  
+- Navegación entre secciones mediante **React Router**.  
+- Simulación de API REST con **MSW**.  
+- Despliegue automático en **GitHub Pages**.  
+- Uso de **Tailwind CSS** para el diseño responsivo.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧰 Tecnologías utilizadas
+- **React 18**
+- **Vite**
+- **React Router DOM**
+- **Mock Service Worker (MSW)**
+- **Tailwind CSS**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧪 Ejecución en entorno local
+
+### 1️⃣ Clonar el repositorio
+```bash
+git clone https://github.com/JulioAlejandroSalazar/hospital-julio-salazar-DFII.git
+cd hospital-julio-salazar-DFII
+npm install
+npx msw init public/  <-  (solo se ejecuta la primera vez)
+npm run dev
+```
